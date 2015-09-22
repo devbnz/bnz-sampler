@@ -1,0 +1,443 @@
+{
+	"patches": 
+	[
+    	{
+    		"name": "TR909",
+		    "samples":[
+		        { "note":"c3", "sample":"TR909/909BD.wav" },
+		        { "note":"d3", "sample":"TR909/909snare.wav" },
+		        { "note":"e3", "sample":"TR909/909clap.wav" },
+		        { "note":"f3", "sample":"TR909/909hat.wav" },
+		        { "note":"g3", "sample":"TR909/909hat2.wav" },
+		        { "note":"a3", "sample":"TR909/909ltom.wav" },
+		        { "note":"b3", "sample":"TR909/909mtom.wav" },
+		        { "note":"c4", "sample":"TR909/909hitom.wav" },
+		        { "note":"d4", "sample":"TR909/909ride.wav" },
+		        { "note":"e4", "sample":"TR909/909rim.wav" },
+		        { "note":"f4", "sample":"TR909/909crash.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Bell Synth",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/BellSynC2.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/BellSynC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Crystal Bell Organ",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/CBellOrgC3.wav" },
+		        { "note":"c5", "sample":"01Keyboards1/CBellOrgC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Dirty Clavier",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/DirtClavC2.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/DirtClavC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Electric Organ 1",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/ElecOrg1C2.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/ElecOrg1C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Electric Organ 2",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/ElecOrg2C3.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/ElecOrg2C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Electric Organ 3",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/ElecOrg3C2.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/ElecOrg3C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Electric Organ 4",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/ElecOrg4C3.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/ElecOrg4C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Electric Korg",
+		    "samples":[
+		        { "note":"c2", "sample":"01Keyboards1/EleKorgC2.wav" },
+		        { "note":"c4", "sample":"01Keyboards1/EleKorgC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Melodium",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/MelodiumC3.wav" },
+		        { "note":"c5", "sample":"01Keyboards1/MelodiumC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Organ 1",
+		    "samples":[
+		        { "note":"c4", "sample":"01Keyboards1/Organ1C4.wav" },
+		        { "note":"c6", "sample":"01Keyboards1/Organ1C6.wav" }
+		    ]
+		},
+		{
+    		"name": "MHD: SC Testsample",
+		    "samples":[
+		        { "note":"c5", "sample":"http://api.soundcloud.com/tracks/37742690/stream?client_id=679877a8ddb9badc6a2a75373c5f3de7" }
+		    ]
+		},
+		
+		
+    	{
+    		"name": "Keyboards 1: Organ 2",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/Organ2C3.wav" },
+		        { "note":"c6", "sample":"01Keyboards1/Organ2C6.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Organ 3",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/Organ3C3.wav" },
+		        { "note":"c5", "sample":"01Keyboards1/Organ3C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Organ 4",
+		    "samples":[
+		        { "note":"c4", "sample":"01Keyboards1/Organ4C2.wav" },
+		        { "note":"c6", "sample":"01Keyboards1/Organ4C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Organ 5",
+		    "samples":[
+		        { "note":"c5", "sample":"01Keyboards1/Organ5C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Keyboards 1: Toy Organ",
+		    "samples":[
+		        { "note":"c3", "sample":"01Keyboards1/ToyOrganC3.wav" },
+		        { "note":"c5", "sample":"01Keyboards1/ToyOrganC5.wav" }
+		    ]
+		},
+
+
+
+
+
+    	{
+    		"name": "Tremolo Strings: Orch2",
+		    "samples":[
+		        { "note":"c2", "sample":"13TremStr/Orch2C2.wav" },
+		        { "note":"c4", "sample":"13TremStr/Orch2C4.wav" }
+		    ]
+		},
+		{
+			"name": "Tremolo Strings: Orch5",
+			"samples":[
+				{ "note":"c3", "sample":"13TremStr/Orch5C3.wav" },
+				{ "note":"c4", "sample":"13TremStr/Orch5C4.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: OrchFz1",
+			"samples":[
+				{ "note":"a3", "sample":"13TremStr/OrchFz1A3.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Sfzan1",
+			"samples":[
+				{ "note":"c3", "sample":"13TremStr/Sfzan1C3.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Shimmer",
+			"samples":[
+				{ "note":"c3", "sample":"13TremStr/ShimmerC3.wav" },
+				{ "note":"c5", "sample":"13TremStr/ShimmerC5.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Tibet",
+			"samples":[
+				{ "note":"c2", "sample":"13TremStr/TibetC2.wav" },
+				{ "note":"c4", "sample":"13TremStr/TibetC4.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Tympani",
+			"samples":[
+				{ "note":"c3", "sample":"13TremStr/TympC3.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Violin Tremolo 2",
+			"samples":[
+				{ "note":"c2", "sample":"13TremStr/VlnTrem2C2.wav" },
+				{ "note":"c4", "sample":"13TremStr/VlnTrem2C4.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Violin Tremolo 4",
+			"samples":[
+				{ "note":"c2", "sample":"13TremStr/VlnTrem4C2.wav" },
+				{ "note":"c3", "sample":"13TremStr/VlnTrem4C3.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Violin Tremolo*",
+			"samples":[
+				{ "note":"a4", "sample":"13TremStr/VlnTremAA4.wav" },
+				{ "note":"d4", "sample":"13TremStr/VlnTremDD4.wav" },
+				{ "note":"g4", "sample":"13TremStr/VlnTremGG4.wav" },
+				{ "note":"e5", "sample":"13TremStr/VlnTremEE4.wav" }
+			]
+		},
+		{
+			"name": "Tremolo Strings: Violin Tremolo",
+			"samples":[
+				{ "note":"c3", "sample":"13TremStr/VTremoloC3.wav" },
+				{ "note":"c5", "sample":"13TremStr/VTremoloC5.wav" }
+			]
+		},
+
+
+
+		{
+			"name": "Glass Strike",
+			"samples":[
+				{ "note":"f#6", "sample":"glass-hit-new.ogg" }
+			]
+		},
+
+
+
+
+
+    	{
+    		"name": "Humans 1: Ah2",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/Ah2C3.wav" },
+		        { "note":"c5", "sample":"19Humans1/Ah2C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Arr1",
+		    "samples":[
+		        { "note":"c2", "sample":"19Humans1/Arr1C2.wav" },
+		        { "note":"c5", "sample":"19Humans1/Arr1C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Bucchi",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/BucchiC3.wav" },
+		        { "note":"c5", "sample":"19Humans1/BucchiC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Clap",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/Clap.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Do",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/DoC4.wav" },
+		        { "note":"c5", "sample":"19Humans1/DoC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: La",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/LaC3.wav" },
+		        { "note":"c5", "sample":"19Humans1/LaC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Laugh",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/LaughC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Mmm",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/MmmC4.wav" },
+		        { "note":"c6", "sample":"19Humans1/MmmC6.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Moan",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/MoanC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Mouth02",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/Mouth02C3.wav" },
+		        { "note":"c5", "sample":"19Humans1/Mouth02C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Shout",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/ShoutC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Tom Bass",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/TomBassC3.wav" },
+		        { "note":"c5", "sample":"19Humans1/TomBassC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Vox1",
+		    "samples":[
+		        { "note":"c4", "sample":"19Humans1/Vox1C4.wav" },
+		        { "note":"c5", "sample":"19Humans1/Vox1C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Vox",
+		    "samples":[
+		        { "note":"c3", "sample":"19Humans1/VoxC3.wav" },
+		        { "note":"c5", "sample":"19Humans1/VoxC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 1: Whistle",
+		    "samples":[
+		        { "note":"c2", "sample":"19Humans1/WhistC3.wav" },
+		        { "note":"c5", "sample":"19Humans1/WhistC5.wav" }
+		    ]
+		},
+
+
+
+
+
+    	{
+    		"name": "Humans 2: Ahh1",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Ahh1C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Ahh1C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Ahh",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/AhhC2.wav" },
+		        { "note":"c4", "sample":"20Humans2/AhhC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Alto1",
+		    "samples":[
+		        { "note":"c3", "sample":"20Humans2/Alto1C3.wav" },
+		        { "note":"c5", "sample":"20Humans2/Alto1C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Bass1",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Bass1C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Bass1C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Bass2",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Bass2C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Bass2C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Laf",
+		    "samples":[
+		        { "note":"g3", "sample":"20Humans2/Laf3G3.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Ooh",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/OohC2.wav" },
+		        { "note":"c4", "sample":"20Humans2/OohC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Oohh",
+		    "samples":[
+		        { "note":"c3", "sample":"20Humans2/OohhC3.wav" },
+		        { "note":"c5", "sample":"20Humans2/OohhC5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Scream5",
+		    "samples":[
+		        { "note":"a4", "sample":"20Humans2/Scream5A4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Shhha",
+		    "samples":[
+		        { "note":"c4", "sample":"20Humans2/ShhhaC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Soprano1",
+		    "samples":[
+		        { "note":"c3", "sample":"20Humans2/Soprano1C3.wav" },
+		        { "note":"c5", "sample":"20Humans2/Soprano1C5.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Tenor2",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Tenor2C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Tenor2C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Tenor3",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Tenor3C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Tenor3C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Voice3",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/Voice3C2.wav" },
+		        { "note":"c4", "sample":"20Humans2/Voice3C4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Voxm",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/VoxmC2.wav" },
+		        { "note":"c4", "sample":"20Humans2/VoxmC4.wav" }
+		    ]
+		},
+    	{
+    		"name": "Humans 2: Xom",
+		    "samples":[
+		        { "note":"c2", "sample":"20Humans2/XomC2.wav" },
+		        { "note":"c4", "sample":"20Humans2/XomC4.wav" }
+		    ]
+		}
+    ]
+}
