@@ -15,9 +15,7 @@
 	<div class="site-wrapper">
 
 		<div class="site-wrapper-inner">
-
 			<div class="cover-container">
-
 				<div class="masthead clearfix">
 					<div class="inner">
 						<h3 class="masthead-brand">bnz sampler</h3>
@@ -97,7 +95,7 @@
 						</table>
 					</div>
 				</div>
-<br style="clear:both;">
+					<br style="clear:both;">
 							<select id="patch" style="visibility:hidden;"></select>
 							<div id="synthbox">
 
@@ -123,9 +121,7 @@
 	</div>
 
 	<script>
-		var audioContext;
-		var RecNode;
-		var recorder;
+
 	</script>
 
 	<script src="js/midi.js"></script>
@@ -134,18 +130,20 @@
 	<script src="js/ui.js"></script>
 	<script src="js/oscilloscope.js"></script>
 	<script src="js/multisample.js"></script>
+<!--
 	<script src="js/recorder.js"></script>
 	<script src="recorder.js"></script>
-	<script src="js/samplehandling.js"></script>
-
-	<script src="http://connect.soundcloud.com/sdk.js"></script>
+-->
+	<script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
 	<script>
-		// SoundCloud Init
+		var audioContext;
+	//	var RecNode;
+	//	var recorder;
+
 		SC.initialize({
 			client_id: "17a992358db64d99e492326797fff3e8",
-			redirect_uri: "REDIRECT_URL"
 		});
 
 		$(function() {
@@ -163,6 +161,23 @@
 				DLSamplePack(this.value);
 			});
 		});
+
+		function DLSamplePack(url){
+		  $('#scpatch').empty();
+		  var track_url = url;
+		  var input = []
+		  SC.get('/resolve', { url: track_url }, function(tracks) {
+		    $('.sampleset').removeClass('off').addClass('on');
+		    $('#loopsetloaded').append('<a href="' + tracks.permalink_url + '" target="blank">Soundcloud Link</a>');
+		    input = tracks.tracks;
+		    var output = [];
+		    for (var i = 0, l = input.length; i < l; i++) {
+		      var obj = input[i];
+		      output.push('<option value="'+ obj.stream_url +'">'+ obj.title +'</option>');
+		    }
+		    $('#scpatch').html(output.join(''));
+		  });
+		}
 	</script>
 </body>
 </html>
