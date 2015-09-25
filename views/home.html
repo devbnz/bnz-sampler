@@ -5,11 +5,11 @@
       <tbody>
         <tr>
           <td><span class="synthlabel">SAMPLE PACK</span></td>
-          <td><select id="scloopmasters">
-            <option value="https://soundcloud.com/loopmasters/sets/download-free-classic-synth">Classic Synth</option>
-            <option value="https://soundcloud.com/loopmasters/sets/mad-professor-reel-to-reel-reggae-vol2">Reggae</option>
-            <option value="https://soundcloud.com/loopmasters/sets/download-free-bass-house">Bass House</option>
-            <select></td>
+          <td>
+            <select id="scloopmasters">
+            <option ng-repeat="pack in samplepacks" value="{{pack.url}}">{{pack.name}}</option>
+            <select>
+          </td>
           <td><i class="fa fa-circle sampleset off"></i></td>
           </tr>
         <tr>

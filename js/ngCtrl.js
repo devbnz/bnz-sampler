@@ -16,18 +16,21 @@ Controllers.controller('HomeCtrl', ['$scope', '$routeParams', '$location', 'proj
 function($scope, $routeParams, $location, project) {
 /*
   $scope.project = { title: project.title };
-
-  $scope.milestones = [
+*/
+  $scope.samplepacks = [
         {     id    :   1,
-              body  : "project started",
-              date  : "2015-03-17"
+              url   : "https://soundcloud.com/loopmasters/sets/download-free-classic-synth",
+              name  : "Classic Synth"
         },
         {     id    :   2,
-              body  : "moved to github",
-              date  : "2015-09-20"
+              url   : "https://soundcloud.com/loopmasters/sets/mad-professor-reel-to-reel-reggae-vol2",
+              name  : "Reggae"
+        },
+        {     id    :   3,
+              url   : "https://soundcloud.com/loopmasters/sets/download-free-bass-house",
+              name  : "Bass House"
         }
         ];
-*/
 
 var audioContext;
 //	var RecNode;
