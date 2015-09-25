@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Sampler">
 <head>
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=916,user-scalable=no,initial-scale=1">
 	<title>BNZ SAMPLER</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="styles/bootstrap.css">
-	<link rel="stylesheet" href="styles/cover.css">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-
 
 	<div class="site-wrapper">
 
 		<div class="site-wrapper-inner">
+
 			<div class="cover-container">
+
 				<div class="masthead clearfix">
 					<div class="inner">
 						<h3 class="masthead-brand">bnz sampler</h3>
@@ -28,85 +28,8 @@
 						</nav>
 					</div>
 				</div>
-
-				<div class="inner cover">
-					<div class="synthLeft">
-					<div class="bs-example" data-example-id="condensed-table">
-						<table class="table table-condensed">
-							<tbody>
-								<tr>
-									<td><span class="synthlabel">SAMPLE PACK</span></td>
-									<td><select id="scloopmasters">
-										<option value="https://soundcloud.com/loopmasters/sets/download-free-classic-synth">Classic Synth</option>
-										<option value="https://soundcloud.com/loopmasters/sets/mad-professor-reel-to-reel-reggae-vol2">Reggae</option>
-										<option value="https://soundcloud.com/loopmasters/sets/download-free-bass-house">Bass House</option>
-										<select></td>
-									<td><i class="fa fa-circle sampleset off"></i></td>
-									</tr>
-								<tr>
-									<td><span class="synthlabel">SAMPLE</span></td>
-									<td><select id="scpatch">
-										<option value="https://api.soundcloud.com/tracks/166471977/stream">MHD 2014 - BNZ demo</option>
-									</select></td>
-								<td><i class="fa fa-circle sample off"></i></td>
-						  	</tr>
-							</tbody>
-						</table>
-					</div>
+				<div ng-view>
 				</div>
-				<div class="synthLeft">
-
-					<div class="bs-example" data-example-id="condensed-table">
-						<table class="table table-condensed">
-							<tbody>
-								<tr>
-									<td><span class="synthlabel">MIDI-IN</span></td>
-									<td ><select id="midiIn"></select></td>
-									<td><i class="fa fa-circle midiInput off"></i></td>
-								</tr>
-								<tr>
-									<td><span class="synthlabel">MIDI-OUT</span></td>
-									<td><select id="midiOut"></select></td>
-									<td><i class="fa fa-circle off"></i></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="synthLeft">
-
-					<div class="bs-example" data-example-id="condensed-table">
-						<table class="table table-condensed">
-							<tbody>
-								<tr>
-									<td><span class="synthlabel">OCTAVE</span></td>
-									<td >	<select id="octave">
-										<option>+3</option>
-										<option>+2</option>
-										<option>+1</option>
-										<option selected> 0</option>
-										<option>-1</option>
-										<option>-2</option>
-										<option>-3</option>
-									</select></td>
-									<td><i class="fa fa-circle"></i></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-					<br style="clear:both;">
-							<select id="patch" style="visibility:hidden;"></select>
-							<div id="synthbox">
-
-							</div>
-							<div id="keybox" touch-action="none">
-								<div id="blackkeys">
-									<span id="k61" class="black key"></span><span id="k63" class="black key"></span><span class="spacer"></span><span id="k66" class="black key"></span><span id="k68" class="black key"></span><span id="k70" class="black key"></span><span class="spacer"></span><span id="k73" class="black key"></span><span id="k75" class="black key"></span><span class="spacer"></span><span id="k78" class="black key"></span><span id="k80" class="black key"></span><span id="k82" class="black key"></span>
-								</div>
-								<span id="k60" class="white key"></span><span id="k62" class="white key"></span><span id="k64" class="white key"></span><span id="k65" class="white key"></span><span id="k67" class="white key"></span><span id="k69" class="white key"></span><span id="k71" class="white key"></span><span id="k72" class="white key"></span><span id="k74" class="white key"></span><span id="k76" class="white key"></span><span id="k77" class="white key"></span><span id="k79" class="white key"></span><span id="k81" class="white key"></span><span id="k83" class="white key"></span>
-							</div>
-					</div>
 
 				<div class="mastfoot">
 					<div class="inner">
@@ -120,9 +43,11 @@
 
 	</div>
 
-	<script>
-
-	</script>
+	<script src="js/ga.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+	<script src="js/ngCtrl.js"></script>
+	<script src="js/ngSampler.js"></script>
 
 	<script src="js/midi.js"></script>
 	<script src="js/waveshaper.js"></script>
@@ -136,48 +61,5 @@
 -->
 	<script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
-	<script>
-		var audioContext;
-	//	var RecNode;
-	//	var recorder;
-
-		SC.initialize({
-			client_id: "17a992358db64d99e492326797fff3e8",
-		});
-
-		$(function() {
-				$('#scpatch').on('change', function(){
-				SCkickOffSampleDownload(this.value);
-			});
-
-			$( "#midiIn" ).on('change', function(e) {
-				var optionSelected = $("option:selected", this);
-				var valueSelected = this.value;
-				activateDevice(valueSelected);
-			});
-
-			$('#scloopmasters').on('change', function(){
-				DLSamplePack(this.value);
-			});
-		});
-
-		function DLSamplePack(url){
-		  $('#scpatch').empty();
-		  var track_url = url;
-		  var input = []
-		  SC.get('/resolve', { url: track_url }, function(tracks) {
-		    $('.sampleset').removeClass('off').addClass('on');
-		    $('#loopsetloaded').append('<a href="' + tracks.permalink_url + '" target="blank">Soundcloud Link</a>');
-		    input = tracks.tracks;
-		    var output = [];
-		    for (var i = 0, l = input.length; i < l; i++) {
-		      var obj = input[i];
-		      output.push('<option value="'+ obj.stream_url +'">'+ obj.title +'</option>');
-		    }
-		    $('#scpatch').html(output.join(''));
-		  });
-		}
-	</script>
 </body>
 </html>
