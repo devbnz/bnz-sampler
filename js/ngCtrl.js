@@ -14,9 +14,15 @@ Controllers.value('project', {
 
 Controllers.controller('HomeCtrl', ['$scope', '$routeParams', '$location', 'project',
 function($scope, $routeParams, $location, project) {
-/*
-  $scope.project = { title: project.title };
-*/
+
+  var audioContext;
+  //	var RecNode;
+  //	var recorder;
+
+  $scope.sampleset = null;
+  $scope.samplesetCss = "fa fa-circle sample off";
+  $scope.sampleSelected = null;
+
   $scope.samplepacks = [
         {     id    :   1,
               url   : "https://soundcloud.com/loopmasters/sets/download-free-classic-synth",
@@ -32,18 +38,14 @@ function($scope, $routeParams, $location, project) {
         }
         ];
 
-var audioContext;
-//	var RecNode;
-//	var recorder;
-
 SC.initialize({
   client_id: "17a992358db64d99e492326797fff3e8",
 });
 
 $(function() {
-    $('#scpatch').on('change', function(){
-    SCkickOffSampleDownload(this.value);
-  });
+//    $('#scpatch').on('change', function(){
+//    SCkickOffSampleDownload(this.value);
+//  });
 
   $( "#midiIn" ).on('change', function(e) {
     var optionSelected = $("option:selected", this);
@@ -51,26 +53,19 @@ $(function() {
     activateDevice(valueSelected);
   });
 
-  $('#scloopmasters').on('change', function(){
-    DLSamplePack(this.value);
-  });
+  //$('#scloopmasters').on('change', function(){
+  //  DLSamplePack(this.value);
+  //});
 });
 
-function DLSamplePack(url){
-  $('#scpatch').empty();
-  var track_url = url;
-  var input = []
-  SC.get('/resolve', { url: track_url }, function(tracks) {
-    $('.sampleset').removeClass('off').addClass('on');
-    $('#loopsetloaded').append('<a href="' + tracks.permalink_url + '" target="blank">Soundcloud Link</a>');
-    input = tracks.tracks;
-    var output = [];
-    for (var i = 0, l = input.length; i < l; i++) {
-      var obj = input[i];
-      output.push('<option value="'+ obj.stream_url +'">'+ obj.title +'</option>');
-    }
-    $('#scpatch').html(output.join(''));
+$scope.updateSamples = function(){
+  SC.get('/resolve', { url: $scope.sampleset }, function(tracks) {
+    $scope.results = tracks.tracks;
   });
+}
+
+$scope.loadSample = function(){
+  SCkickOffSampleDownload($scope.sampleSelected);
 }
 
 }

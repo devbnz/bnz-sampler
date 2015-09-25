@@ -4,20 +4,20 @@
     <table class="table table-condensed">
       <tbody>
         <tr>
-          <td><span class="synthlabel">SAMPLE PACK</span></td>
+          <td><span class="synthlabel">SAMPLEPACK</span></td>
           <td>
-            <select id="scloopmasters">
-            <option ng-repeat="pack in samplepacks" value="{{pack.url}}">{{pack.name}}</option>
+            <select id="scloopmasters" ng-model="sampleset" ng-options="pack.url as pack.name for pack in samplepacks" ng-change="updateSamples()">
             <select>
           </td>
-          <td><i class="fa fa-circle sampleset off"></i></td>
+          <td><!--<i ng-class="samplesetCss"></i>--></td>
           </tr>
         <tr>
           <td><span class="synthlabel">SAMPLE</span></td>
-          <td><select id="scpatch">
-
-          </select></td>
-        <td><i class="fa fa-circle sample off"></i></td>
+          <td>
+            <select id="scpatch" ng-model="sampleSelected" ng-options="item.stream_url as item.title for item in results" ng-change="loadSample()">
+            </select>
+          </td>
+        <td><!--<i ng-class="fa fa-circle sample off"></i>--></td>
         </tr>
       </tbody>
     </table>
