@@ -22,6 +22,8 @@ Sampler.factory('myGoogleAnalytics', [
     var myGoogleAnalytics = {};
     var repoLocation = 'bnz-sampler/#';
 
+    $rootScope.appname = 'bnz sampler';
+
     myGoogleAnalytics.sendPageview = function() {
       if ($window.ga) {
         $window.ga('set', 'page', repoLocation + $location.path());
@@ -35,9 +37,7 @@ Sampler.factory('myGoogleAnalytics', [
     return myGoogleAnalytics;
   }
 ])
-Sampler.run([
-  'myGoogleAnalytics',
+Sampler.run(['myGoogleAnalytics',
   function(myGoogleAnalytics) {
       // inject self
-  }
-]);
+  }]);

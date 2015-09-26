@@ -30,12 +30,12 @@
       <tbody>
         <tr>
           <td><span class="synthlabel">MIDI-IN</span></td>
-          <td ><select id="midiIn"></select></td>
+          <td ><select id="midiIn" ng-model="midiInputSelected" ng-options="device.id as device.name for device in deviceInputs" ng-change="updateMidiInput()"></select></td>
           <td><i class="fa fa-circle midiInput off"></i></td>
         </tr>
         <tr>
           <td><span class="synthlabel">MIDI-OUT</span></td>
-          <td><select id="midiOut"></select></td>
+          <td><select id="midiOut" ng-model="midiOutputSelected" ng-options="device.id as device.name for device in deviceOutputs" ng-change="updateMidiOutput()"></select></td>
           <td><i class="fa fa-circle off"></i></td>
         </tr>
       </tbody>
